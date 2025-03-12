@@ -1139,13 +1139,19 @@
 <ol>
 <li>میتونیم خیلی سریع پروژمون رو بیاریم بالا</li>
 <li>بهمون ORM میده که خیلی راحت با دیتابیس کار بکنیم</li>
-<li>برای مدیریت بهتر بهمون یه پنل ادمین با کلی قابلیت میده</li>
+<li>برای مدیریت بهتر، بهمون یه پنل ادمین با کلی قابلیت میده</li>
+<li>داکیومنت قوی و جامعه خوبی داره</li>
 </ol>
 </details>
 <div class="break-line"></div>
 <details class="qbox">
 <summary>1. یه توضیح کوتاه راجب معماری MVT  بدید.</summary>
-<p>خب باید بگم که</p>
+<p>MVT(Model View Template) معماریی هستش که جنگو ازش پیروی میکنه و باعث می‌شه کد ما تمیز و قابل توسعه باشه، به ما اجازه میده قسمت های مختلف برنامه مون رو به صورت جدا مدیریت بکنیم:</p>
+<ul>
+<li>تو قسمت Model تعامل با دیتابیس و مدیریت دیتا رو انجام میدیم.</li>
+<li>داخل View درخواست کاربر پردازش میشه، منطق برنامه اعمال میشه و داده ها به Template ارسال میشن.</li>
+<li>قسمت Templateمربوط به نحوه نمایش دیتای در سمت فرانت اند به کاربر هستش.</li>
+</ul>
 </details>
 <div class="break-line"></div>
 <details class="qbox">
@@ -1153,46 +1159,41 @@
 <ul>
 <li>ORM یه لایه هستش بین درایور دیتابیس، سینتکس sql و کاربر در سطح بالا تر.</li>
 <li>بهمون کمک میکنه که راحت تر بتونیم با دیتابیس تعامل داشته باشیم.</li>
+<li>باعث میشه کدمون مستقل از دیتابس خاصی باشه و بتونیم حد اقل موارد امنیتی رو هم داشته باشیم(  مثلا درگیر SQL injection و... نمی‌شیم)</li>
+<li>بدونه ORM هم میشه و حتی میتونیم با raw کوئری ORM، کوئری های SQL بنویسیم.</li>
 </ul>
 </details>
 <div class="break-line"></div>
 <details class="qbox">
 <summary>3. فرق بین معماری مایکروسرویس و مونولیتیک چی هستش و جنگو از کدوم استفاده میکنه؟</summary>
-<p>زمانی کن شود</p>
 </details>
 <div class="break-line section"></div>
 
 <h2 id="_2">مدیریت پروژه و کدنویسی</h2>
 <details class="qbox">
 <summary>4. زمانی که میخواید یه پروژه رو شروع کنید اول چیکار میکنید؟</summary>
-<p>خب باید بگم که</p>
 </details>
 <div class="break-line"></div>
 <details class="qbox">
 <summary>5. چطوری لاگ میگیرید و ارور های احتمالی رو هندل میکنید؟</summary>
-<p>زمانی کن شود</p>
 </details>
 <div class="break-line"></div>
 <details class="qbox">
 <summary>6. چطوری پروژتون رو آماده میکنید برای محیط پروداکشن؟ از چه ابزار هایی استفاده میکنید و چرا؟</summary>
-<p>زمانی کن شود</p>
 </details>
 <div class="break-line"></div>
 <details class="qbox">
 <summary>7. بهترین روش برای مدیریت اطلاعات حساس در پروژه چی هستش؟ کجا ذخیره بشه؟</summary>
-<p>tee</p>
 </details>
 <div class="break-line section"></div>
 
 <h2 id="api-crud">پروتکل‌، API و CRUD</h2>
 <details class="qbox">
 <summary>8. یه توضیح کوتاه راجب پروتکل http بدید.</summary>
-<p>خب باید بگم که</p>
 </details>
 <div class="break-line"></div>
 <details class="qbox">
 <summary>9. عملیات CRUD چی هستش و چه ربطی به متود های درخواست http داره؟</summary>
-<p>زمانی کن شود</p>
 </details>
 <div class="break-line"></div>
 <details class="qbox">
@@ -1201,71 +1202,58 @@
 <div class="break-line"></div>
 <details class="qbox">
 <summary>11. سرور ساید رندرینگ(SSR) و کلاینت سایت رندرینگ(CSR) چی هستش و تو جنگو چطور اتفاق میفته؟</summary>
-<p>زمانی کن شود</p>
 </details>
 <div class="break-line"></div>
 <details class="qbox">
 <summary>12. اول بگید RestApi چی هستش و بعد بگید فرقش با DRF چیه؟‌</summary>
-<p>زمانی کن شود</p>
 </details>
 <div class="break-line"></div>
 <details class="qbox">
 <summary>13. GraphQL چیه و چه فرقی با REST API داره؟</summary>
-<p>وقتی میزنی </p>
 </details>
 <div class="break-line section"></div>
 
 <h2 id="_3">تست و بهینه‌سازی</h2>
 <details class="qbox">
 <summary>14. چرا تست مینویسم و هدف از تست چی هستش؟ یه توضیح کوتاه</summary>
-<p>زمانی کن شود</p>
 </details>
 <div class="break-line"></div>
 <details class="qbox">
 <summary>15. چرا باید از کش(Cache) استفاده کنیم؟ و در چه سطح هایی ما میتونیم کش کنیم.</summary>
-<p>زمانی کن شود</p>
 </details>
 <div class="break-line"></div>
 <details class="qbox">
 <summary>16. به عنوان کسی که سمت بک اند کار میکنه، شما چه نوع تست هایی رو باید بنویسید؟</summary>
-<p>زمانی کن شود</p>
 </details>
 <div class="break-line"></div>
 <details class="qbox">
 <summary>17. چقدر با دیزاین پترن ها آشنا هستید؟ 2 مورد که بیشتر باهاش کار کردید رو مثال بزنید.</summary>
-<p>زمانی کن شود</p>
 </details>
 <div class="break-line section"></div>
 
 <h2 id="_4">امنیت و مدیریت دسترسی</h2>
 <details class="qbox">
 <summary>17. فرق Authentication و Autorization چی هستش؟</summary>
-<p>زمانی کن شود</p>
 </details>
 <div class="break-line"></div>
 <details class="qbox">
 <summary>18. درک تون از Middleware رو با یه مثال کوچیک توضیح بدید.</summary>
-<p>زمانی کن شود</p>
 </details>
 <div class="break-line"></div>
 <details class="qbox">
 <summary>19. جنگو به صورت دیفالت چیزی برای احراز هویت و مدیریت سطح دست رسی داره؟ توضیح بدید.</summary>
-<p>زمانی کن شود</p>
 </details>
 <div class="break-line section"></div>
 
 <h2 id="_5">چالش‌ها</h2>
 <details class="qbox">
 <summary>20. یکی از چالش هایی که در طول مسیر تون باهاش مواجه شدید رو کوتاه توضیح بدید.</summary>
-<p>زمانی کن شود</p>
 </details>
 <details class="qbox">
 <summary>21.بزرگ‌ترین اشتباهی که در یه پروژه جنگو مرتکب شدی چی بود و چطور حلش کردی؟</summary>
-<p>111</p>
 </details>
 <details class="qbox">
 <summary>22.فرض کنید سایت سرعتش اومده پایین و بعضی درخواست ها failed میشه و شما باید دیباگ بگید و مشکل رو پیدا کنید. یه توضیح کوتاه بدید که مرحله به مرحله چیکار میکنید.</summary>
-<p>111</p>
 </details>
 <div class="break-line end"></div>
 
