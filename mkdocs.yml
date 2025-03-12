@@ -1,0 +1,83 @@
+site_name: سوالات مصابحه جنگو
+site_description: اینجا لیست سوالاتی که برای پوزیشن بک اند دولوپر جنگو و پایتون پرسیده میشه همراه با جوابش قرار میگیره.
+repo_name: Django-Interview-Questions
+repo_url: https://github.com/zankoAn/django-interview-questions/
+edit_uri: "/docs/"
+
+theme:
+  name: material
+  language: fa
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Vazir
+
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.instant
+    - navigation.indexes
+    - toc.follow
+    - content.tabs.link
+    - search.share
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotations
+
+extra_css:
+  - css/extra.css
+
+plugins:
+  - search
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.blocks.tab:
+      alternate_style: true
+
+  - pymdownx.blocks.details:
+      "types": [{ "name": "qbox", "class": "qbox" }]
+
+nav:
+  - سوالات مروبط به جنگو:
+      - سطح جونیور:
+        - سوالات بیسیک: questions/django/junior/base.md
+        - دیتابیس و ORM: questions/django/junior/db.md
+        - ویو و url: questions/django/junior/view.md
+        - مدیریت کاربر و احراز هویت: questions/django/junior/auth.md
+
+      - سطح میدلول:
+        - سوالات بیسیک: questions/django/mid-level/base.md
+        - سیگنال ها: questions/django/mid-level/signals.md
+        - دیتابیس: questions/django/mid-level/dbl.md
+        - API: questions/django/mid-level/api.md
+        - امنیت: questions/django/mid-level/security.md
+        - تکنولوژی ها: questions/django/mid-level/tools.md
+
+      - سطح سینیور:
+        - سوالات بیسیک: questions/django/senior/base.md
+        - دیزاین: questions/django/senior/design.md
+        - دیتابیس: questions/django/senior/db.md
+        - API: questions/django/senior/api.md
+        - امنیت: questions/django/senior/security.md
+
+  - سوالات مربوط به پایتون: blog/posts/targets.md
+  - سوال های غیر فنی: blog/posts/requirements.md

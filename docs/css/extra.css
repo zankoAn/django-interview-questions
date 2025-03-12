@@ -1,0 +1,19 @@
+.qbox {
+    border: 1px solid #5d73f7d6 !important;
+}
+
+.qbox summary:before {
+    background-color: #5d73f7;
+}
+
+.break-line {
+    margin-block: 20px;
+}
+
+.break-line.section {
+    margin-block: 60px;
+}
+
+.break-line.end {
+    margin-block: 150px;
+}
